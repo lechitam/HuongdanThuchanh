@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOSS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Assests/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="shortcut icon" href="Images/logo.jpg">
+	  <script type="text/javascript" src="Assests/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="Assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid navCustome">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	<dir class="row" style="margin-left: -43px;">
+    		<dir class="col-sm-3" style="margin-left: -13px;"> <!-- 3 cot dau -->
+    			<ul class="nav navbar-nav">
+			      	<li><a href="foody.html" style="font-family: Brush Script MT; color: #ffffff">OPEN-SOURCE</a></li>
+			        <li style="margin-left: 25px">
+			        	<select class="form-control" style="margin-top: 8px">
+						  <option>TP.HCM</option>
+						  <option>Hà Nội</option>
+						  <option>Đà Nẵng</option>
+						  <option>Cần Thơ</option>
+						  <option>Gia Lai</option>
+						</select>
+
+			        </li>
+			      </ul>
+
+    		</dir> <!-- 3 cot dau -->
+
+    		<dir class="col-sm-6" style="padding-left: 52px;"> <!-- 6 cot -->
+    			<form>
+			        <div id="custom-search-input">
+			            <div class="input-group col-md-12" style="margin-top: -2px;">
+			                <input type="text" class="form-control input-sm" placeholder="SEARCH" style="font-size: 14px;" />
+			                <span class="input-group-btn">
+			                    <button class="btn btn-info btn-lg" type="submit">
+			                        <i class="glyphicon glyphicon-search"></i>
+			                    </button>
+			                </span>
+			            </div>
+			        </div>
+				</form>
+
+    		</dir> <!-- 6 cot -->
+
+    		<dir class="col-sm-3">
+		    	 <ul class="nav navbar-nav navbar-right" style="display: inline;">
+                    <li style="background-color: #4dc14d; border-radius: 8px; margin-top: 8px; height: 34px;">
+                        <a href="#" data-toggle="modal" data-target="#myModal" style="color: #ffffff; padding-top: 7px;" >Đăng nhập / Đăng ký</a>
+                    </li>
+
+                </ul>
+    		</dir>
+    	</dir>
+
+      
+  
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        <div class="modal fade" role="dialog" id="myModal">
+            <dir class="modal-dialog"> <!-- modal -->
+                <dir class="modal-content" style="width: 491px;"> <!-- modal content -->
+                    <div class="container" style="height: auto; padding-bottom: 10px; width: 481px; margin-top:9px; margin-left: -35px; border-color: #0066ff;">  <!-- form dang nhapp popup -->
+
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#login_login">Đăng nhập</a></li>
+                            <li><a data-toggle="tab" href="#sign_up">Đăng kí</a></li>
+                            <div><!-- header -->
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div> <!-- header -->
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <div id="login_login" class="tab-pane fade in active">
+                                <div class="login-container">
+                                    <form class="form-login" style="padding-top: 12px;">
+                                        <div class="input-group input-group username">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-user"></span>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="username">
+                                        </div>
+                                        <div class="input-group input-group password" style="margin-top: 5px; margin-bottom: 5px;">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-lock"></span>
+                                            </span>
+                                            <input type="password" class="form-control" placeholder="password">
+                                        </div>
+
+                                        <div style="display: grid;">
+                                        	  	<button type="submit" class="btn btn-success btn-login">Login</button>
+		                                        <ul class="ul-forgot-signup" style="text-align: right;">
+		                                            <li><a href="#">Forgot Password</a></li>
+		                                        </ul>
+
+                                        </div>
+
+                                      
+                                    </form>
+                                <!--end form-login-->
+                                </div>
+                            </div>
+
+                            <div id="sign_up" class="tab-pane fade">
+                                <form class="form-sign-up form-horizontal" method="post" action="">
+                                    <div class="form-group" style="margin-bottom: 10px; margin-top: 10px ">
+                                        <label for="InputUsername" class="col-sm-3 control-label">Username</label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="eInputUsername" placeholder="Username" required="" size="30">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 10px">
+                                        <label for="InputPassword" class="col-sm-3 control-label">Password</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="InputPassword" placeholder="Password" required="" size="30">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 10px">
+                                        <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" size ="30" required="">
+                                        </div>
+                                    </div>
+                                    <div style="padding-left: 121px">
+                                    	<button type="submit" class="btn btn-success">Sign Up</button>
+                                    	<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>	
+                                    </div>
+                                    
+                                </form>
+                            </div>   <!-- home -->
+                        </div>
+                    </div><!--end container -->
+                </dir><!-- modal content -->
+            </dir> <!-- modal -->
+
+        </div> <!-- modal fade -->
+<div class="row" style="margin-left: 0px; margin-right: 0px;">
+
+	<div class="col-sm-2 list-group navbar-fixed-top" style="margin-top: 68px; margin-left: 1px;">
+		  <label class="list-group-item active">Danh mục</label>
+		  <a href="#" class="list-group-item">Ở đâu</a>
+		  <a href="#" class="list-group-item">Đặt bàn</a>
+		  <a href="#" class="list-group-item">Ăn gì</a>
+		  <a href="#" class="list-group-item">Sưu tập</a>
+		  <a href="#" class="list-group-item">TV</a>
+		  <a href="#" class="list-group-item">Bình luận</a>
+		  <a href="#" class="list-group-item">Blogs</a>
+		  <a href="#" class="list-group-item">Khuyến mãi</a>
+		  <a href="#" class="list-group-item">Bank-Card</a>
+	</div>
+	<div class="col-sm-9 col-sm-offset-2">
+		<div class="row">
+			  <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/banh-mi-huynh-hoa.jpg" alt="Bánh mì Huỳnh Hoa">
+			      <div class="caption">
+			        <h3>Bánh mì Huỳnh Hoa</h3>
+			        <p>Vẫn như mọi khi ,một ổ bánh mì mình với bạn cùng ăn vẫn no căng.Một ổ bánh mì gồm thịt,chả lụa,jambon	</p>
+			        <p class="pCustome"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/domino-pizza.jpg" alt="Domino's Pizza">
+			      <div class="caption">
+			        <h3>Domino's Pizza</h3>
+			        <p>Lâu không đi ăn vẫn quá xá ngon.Nhìn cơ sở làm bánh mì với chả,ruốc thịt được chất đống đã mắt luôn:3 </p>
+			        <p class="pCustome"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/Phuc-long-coffee.jpg" alt="Cà phê Phúc Long">
+			      <div class="caption">
+			        <h3>Coffe Phúc Long</h3>
+			        <p>Luôn luôn chật kín chỗ ^^. Mình đến tầm 20h ngồi chen chúc xíu nhưng ko sao vì đông vui. </p>
+			        <p class="pCustome"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/game-one.jpg" alt="Game-one">
+			      <div class="caption">
+			        <h3>Trà sữa - ăn vặt</h3>
+			        <p>Luôn luôn chật kín chỗ ^^. Mình đến tầm 20h ngồi chen chúc xíu nhưng ko sao vì đông vui. Quán phục vụ rất tốt và chuyên nghiệp</p>
+			        <p class="pCustome ct"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/maris-buffet.jpg" alt="Maris-Buffet">
+			      <div class="caption">
+			        <h3>Maris-Buffet</h3>
+			        <p>D'Maris mới khai trương chi nhánh ở đây. Ấn tượng đầu tiên là đẹp, sang trọng, rộng rãi, nhiều đồ ăn.</p>
+			        <p class="pCustome ct"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			   <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/NAMO.jpg" alt="NAMO Artisanal Pizzeria">
+			      <div class="caption">
+			        <h3>NAMO Artisanal Pizzeria</h3>
+			        <p>Quán ăn đẹp, sang trọng, mình đi buổi trưa quán vắng lắm. Nhân viên phục vụ nhiệt tình, tốt. Quán nằm ở mặt tiền rất dễ nhìn ra.</p>
+			        <p class="pCustome"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/kem.jpg" alt="Kem Popuchino">
+			      <div class="caption">
+			        <h3>Pinocchio</h3>
+			        <p>Quán kem nhỏ nằm trên góc đường Hữu Nghị. Mình gọi 1 lẩu kem loại 70k, gồm 4 loại kem, socola, sầu riêng, dâu và bạc hà.</p>
+			        <p class="pCustome"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			   <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/dessert-kem.jpg" alt="Dessert Kem">
+			      <div class="caption">
+			        <h3>Dessert kem</h3>
+			        <p>Kem có vị béo rất ngon. Đặc biệt phù hợp cho các bạn trẻ thích sống ảo. Quán chật, mua mang về.</p>
+			        <p class="pCustome ct"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/bo-ne-3.jpg" alt="Dessert Kem">
+			      <div class="caption">
+			        <h3>Bò né 3</h3>
+			        <p>Mình ăn Bò 3 ngon ở 2 chi nhánh Q8 và Đinh Tiên Hoàng Q1 ròi, thấy chỗ này ko ngon bằng 2 chi nhánh trên</p>
+			        <p class="pCustome ct"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+			   <div class="col-sm-4">
+			    <div class="thumbnail">
+			      <img src="Images/sushi-M&H.jpg" alt="Sushi">
+			      <div class="caption">
+			        <h3>SuShi M&H</h3>
+			        <p>Lien Huyen Sushi làm ngon, ăn lần nào cũng no nức bụng vì thành phần chính là cơm</p>
+			        <p class="pCustome ct"><a href="#" class="btn btn-primary" role="button">Đặt hàng</a> <a href="#" class="btn btn-success" role="button"><span class="star glyphicon glyphicon-star-empty"></span>Yêu thích</a></p>
+			      </div>
+			    </div>
+			  </div>
+		</div> <!-- row-in -->
+
+	</div>
+</div>
+      <script type="text/javascript" src="Assests/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="Assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		// $(".star.glyphicon").click(function() {
+		//   $(this).toggleClass("glyphicon-star glyphicon-star-empty");
+		// });
+	</script>
+</body>
+</html>

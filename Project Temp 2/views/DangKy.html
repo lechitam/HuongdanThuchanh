@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../images/icon.ico">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="../support/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../support/css.css">
+	<script src='https://www.google.com/recaptcha/api.js?hl=vi'></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row"><img src="../images/banner.png"></div>
+		<div class="row">
+			<nav class="navbar navbar-default">
+			    <div class="container-fluid">
+			        <!-- Brand and toggle get grouped for better mobile display -->
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="../index.html">
+			            	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+			            </a>
+			        </div>
+			        <!-- Collect the nav links, forms, and other content for toggling -->
+			        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			            <ul class="nav navbar-nav">
+			                <li><a class="btnMenu" href="ThucDon.html">THỰC ĐƠN</a></li>
+			                <li><a class="btnMenu" href="Sale.html">SALE - KHUYẾN MÃI</a></li>
+			                <li><a class="btnMenu" href="SanPhamHot.html">SẢN PHẨM HOT</a></li>
+			                <li><a class="btnMenu" href="#">HỖ TRỢ</a></li>
+			            </ul>
+			            <form class="navbar-form navbar-right">
+			                <div class="form-group">
+			                    <input type="text" class="form-control" placeholder="Search">
+			                </div>
+			                <button type="submit" class="btn btn-default">
+			                	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			                </button>
+			            </form>
+			        </div>
+			        <!-- /.navbar-collapse -->
+			    </div>
+		    <!-- /.container-fluid -->
+			</nav>
+		</div>
+		<div class="row">
+			<div class="col-md-10"></div>
+			<div class="col-md-2 text-right"><a href="DangNhap.html">Đăng nhập</a> | <a href="DangKy.html">Đăng ký</a></div>
+		</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">
+			<div class="col-md-2 col-sm-2">
+				<div class="panel panel-success">
+				    <div class="panel-heading">TRỢ GIÚP TÀI KHOẢN</div>
+				    <div class="list-group">
+				    	<a href="#" class="list-group-item">Hướng dẫn đăng ký</a>
+					    <a href="#" class="list-group-item">Các câu hỏi thường gặp</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-4 col-sm-10 well">
+			   <legend><span class="glyphicon glyphicon-globe"></span> Đăng ký tài khoản</legend> 
+			   <form action="#" method="post" class="form form-horizontal" role="form"> 
+			   		<div class="form-group">
+				    	<div class="col-md-12"><input class="form-control" name="youraccount" placeholder="Tên Đăng nhập" required="" autofocus="" type="text"> </div>
+				    </div>
+				    <div class="form-group"> 
+				     	<div class="col-xs-6 col-md-6"><input class="form-control" name="firstname" placeholder="Họ" required="" type="text"></div> 
+				    	<div class="col-xs-6 col-md-6"><input class="form-control" name="lastname" placeholder="Tên" required="" type="text"></div> 
+				    </div>
+				    <div class="form-group">
+				    	<div class="col-md-12"><input class="form-control" name="youremail" placeholder="Email" required="" type="email"> </div>
+				    </div>
+				    <div class="form-group">
+				    	<div class="col-md-12"><input class="form-control" name="password" placeholder="Mật khẩu" required="" type="password"> </div>
+				    </div>
+				    <div class="form-group">
+				    	<div class="col-md-12"><input class="form-control" name="retypepassword" placeholder="Nhập lại mật khẩu" required="" type="password"> </div>
+				    </div>
+				   <label for=""> Ngày sinh</label> 
+				    <div class="row"> 
+				     <div class="col-xs-4 col-md-4"> <select class="form-control">              <option value="Day">Ngày</option>            </select> 
+				     </div> 
+				     <div class="col-xs-4 col-md-4"> <select class="form-control">              <option value="Month">Tháng</option>            </select> 
+				     </div> 
+				     <div class="col-xs-4 col-md-4"> <select class="form-control">              <option value="Year">Năm</option>            </select> 
+				     </div> 
+				    </div> <label class="radio-inline">          <input name="sex" id="inlineCheckbox1" value="male" type="radio">          Nam </label> <label class="radio-inline">          <input name="sex" id="inlineCheckbox2" value="female" type="radio">          Nữ </label> 
+				    <br> 
+				    <br>
+				    <div class="g-recaptcha" data-sitekey="6Lc2wiMUAAAAAJvkcDP0cGcUvTlrtxFs4-0nDI9Y" data-callback="YourOnSubmitFn"></div>
+				    <br>
+				    <button class="btn btn-lg btn-primary btn-block" type="submit"> Đăng ký</button> 
+			   </form> 
+			    
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div style="bottom: 0px" class="row">
+			<div class="panel-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-10">© Copyright 2016-2017 S6_NhomThieuNguoi | HCMUS - Khoa Công Nghệ Thông Tin</div>
+						<div class="col-md-2 text-right"><a href="https://www.facebook.com"><img width="32px" src="../images/facebook.png"></a>&nbsp;&nbsp; <a href="https://twitter.com"><img width="32px" src="../images/twitter.png"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../support/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../support/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

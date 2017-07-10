@@ -1,0 +1,34 @@
+.btnMenu {
+	-webkit-transition: background-color ease 0.8s;
+	-moz-transition: background-color ease 0.8s;
+	transition: background-color ease 0.8s;
+}
+
+.btnMenu:hover {
+	font-weight: bold;
+	background-color: #e7e7e7 !important;
+	color: #337ab7 !important;
+}
+
+.btnMenu:visited {
+	background-color: #e7e7e7;
+}
+
+.btnMenuActive {
+	font-weight: bold;
+	background-color: #e7e7e7;
+	color: #337ab7;
+}
+
+.TheLoai {
+    box-shadow: inset 0 0 0 0 #337ab7 !important;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+
+.TheLoai:hover {
+	box-shadow: inset 200px 0 0 0 #337ab7 !important;
+	background-color: #337ab7 !important;
+	color: #fff !important;
+}
